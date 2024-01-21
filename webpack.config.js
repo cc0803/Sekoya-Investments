@@ -13,6 +13,13 @@ module.exports = {
 				test: /\.scss$/,
 				use: ["style-loader", "css-loader", "sass-loader"],
 			},
+			{
+				test: /\.(png|jpe?g|gif)$/i,
+				type: "asset/resource",
+				generator: {
+					filename: "images/[name].[hash][ext]",
+				},
+			},
 		],
 	},
 	plugins: [
