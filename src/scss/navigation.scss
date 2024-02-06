@@ -1,7 +1,53 @@
 @import "colors";
 
-header {
-	width: 100vw;
-	height: 100vh;
-	background-image: url(../images/goldenGateBridge.jpeg);
+* {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	// background-image: url("../images/OregonBeach.jpg");
+	display: flex;
+	justify-content: center;
+	background-color: white;
+}
+
+nav {
+	width: 80vw;
+	display: grid;
+
+	grid-template-columns: 20% 1fr 15% 15% 15% 1fr 15%;
+}
+
+a {
+	font-size: calc(1rem + 1%);
+	text-decoration: none;
+	color: $logoColor;
+	place-self: center;
+}
+
+.logoContainer {
+	min-width: 5rem;
+	min-height: 4rem;
+	background-image: url("../images/Logo/Logo.PNG");
+	background-repeat: no-repeat;
+	background-size: contain;
+	align-self: center;
+}
+
+@media (max-width: 1000px) {
+	nav {
+		grid-template-columns: 25% 1fr 15% 15% 15% 1fr 15%;
+	}
+}
+
+@media (max-width: 800px) {
+	.logoContainer {
+		background-image: url("../images/Logo/LogoSchrift.PNG");
+	}
+}
+
+@media (max-width: 650px) {
+	body {
+		background-image: url("../images/goldenGateBridge.jpeg");
+	}
 }
