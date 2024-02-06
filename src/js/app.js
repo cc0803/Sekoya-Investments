@@ -1,7 +1,6 @@
 import "../scss/app.scss";
 import "../scss/navigation.scss";
 import background1 from "../images/goldenGateBridge.jpeg";
-import logo from "../images/Logo/LogoSchrift.png";
 
 // const imageContainer = document.querySelector(".header-background");
 // let imageElement = new Image();

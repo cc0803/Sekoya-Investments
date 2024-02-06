@@ -26,9 +26,9 @@ a {
 }
 
 .logoContainer {
-	min-width: 5rem;
-	min-height: 4rem;
-	background-image: url("../images/Logo/Logo.PNG");
+	min-width: 10rem;
+	min-height: 10rem;
+	background-image: url("../images/Logo/LogoWhite.PNG");
 	background-repeat: no-repeat;
 	background-size: contain;
 	align-self: center;
@@ -42,7 +42,7 @@ a {
 
 @media (max-width: 800px) {
 	.logoContainer {
-		background-image: url("../images/Logo/LogoSchrift.PNG");
+		background-image: url("../images/Logo/LogoWhite.PNG");
 	}
 }
 
