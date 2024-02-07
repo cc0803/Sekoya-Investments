@@ -7,17 +7,11 @@ body {
 }
 
 nav.desktop-nav {
+	flex-wrap: wrap;
 	width: 90%;
 	display: grid;
 	grid-template-columns: 20% 1fr 15% 15% 15% 1fr 15%;
 	margin: 0 auto 0 auto;
-}
-
-a {
-	font-size: calc(1em + 0.3vw);
-	text-decoration: none;
-	color: $logoColor;
-	place-self: center;
 }
 
 .logoContainer {
@@ -46,6 +40,43 @@ a {
 		opacity: 0;
 		height: 0;
 	}
+}
+
+// Underlining animation
+a {
+	font-size: calc(1em + 0.3vw);
+	text-decoration: none;
+	color: $logoColor;
+	place-self: center;
+	overflow: hidden;
+
+	display: block;
+	position: relative;
+	padding: 0.2em 0;
+}
+
+a::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.1em;
+	background-color: $logoColor;
+	opacity: 0;
+	transition: opacity 300ms, transform 300ms;
+	overflow: hidden;
+	opacity: 1;
+	transform: translate3d(-101%, 0, 0);
+}
+
+a:hover::after,
+a:focus::after {
+	transform: translate3d(0, 0, 0);
+}
+
+a:first-of-type::after {
+	height: 0;
 }
 
 @media (max-width: 1000px) {
@@ -100,6 +131,10 @@ a {
 			height: 50vh;
 			opacity: 1;
 			pointer-events: all;
+		}
+
+		a:first-of-type::after {
+			height: 0.1em;
 		}
 	}
 }
