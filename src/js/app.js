@@ -9,3 +9,14 @@ import "@fortawesome/fontawesome-free/js/solid";
 // imageElement.src = background1;
 // imageElement.classList.add();
 // imageContainer.appendChild(imageElement);
+
+const menuButton = document.querySelector(".menu-bar-container");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+
+console.log(menuButton);
+console.log(dropdownMenu);
+
+menuButton.addEventListener("click", () => {
+	console.log("Hello Button");
+	dropdownMenu.classList.toggle("visible");
+});

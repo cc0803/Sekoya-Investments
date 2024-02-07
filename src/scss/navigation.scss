@@ -1,18 +1,16 @@
 @import "colors";
 
 body {
-	display: flex;
-	justify-content: center;
-	background-color: white;
 	min-width: 100vw;
 	padding: 0;
 	margin: 0;
 }
 
 nav.desktop-nav {
-	width: 80vw;
+	width: 90%;
 	display: grid;
 	grid-template-columns: 20% 1fr 15% 15% 15% 1fr 15%;
+	margin: 0 auto 0 auto;
 }
 
 a {
@@ -32,10 +30,12 @@ a {
 }
 
 .mobile {
-	width: 90%;
+	height: 0;
 	display: grid;
-	grid-template-columns: 20% 1fr 10%;
+	grid-template-columns: minmax(2rem, 20%) 1fr minmax(2rem, 20%);
 	place-items: center;
+	opacity: 0;
+	pointer-events: none;
 
 	.menu-bar {
 		font-size: 2rem;
@@ -43,8 +43,8 @@ a {
 
 	.dropdown-menu {
 		grid-area: 2 / 1 / 3 / 4;
-
-		display: none;
+		opacity: 0;
+		height: 0;
 	}
 }
 
@@ -82,18 +82,24 @@ a {
 	}
 
 	.mobile {
-		width: 100vw;
-	}
+		min-height: 7rem;
+		opacity: 1;
+		pointer-events: all;
 
-	header {
-		width: 100vw;
-	}
+		.dropdown-menu {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			font-size: 1.5rem;
+			background-color: white;
+		}
 
-	.dropdown-menu {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: 0.5rem;
+		.visible {
+			width: 100%;
+			height: 50vh;
+			opacity: 1;
+			pointer-events: all;
+		}
 	}
 }
