@@ -1,8 +1,13 @@
 @import "colors";
 
-// html {
-// 	// background-color: $background;
-// }
+* {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+	// background-color: $background;
+	width: 100vw;
+}
 
 header {
 	width: 80vw;
