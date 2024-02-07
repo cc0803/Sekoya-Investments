@@ -7,6 +7,3 @@ import background1 from "../images/goldenGateBridge.jpeg";
 // imageElement.src = background1;
 // imageElement.classList.add();
 // imageContainer.appendChild(imageElement);
-
-const logoContainer = document.querySelector(".logo");
-logoContainer.src = logo;
