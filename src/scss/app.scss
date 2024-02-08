@@ -8,6 +8,7 @@
 html {
 	// background-color: $background;
 	width: 100vw;
+	background-color: black;
 }
 
 header {
@@ -16,7 +17,11 @@ header {
 
 main {
 	width: 100%;
-	height: 100vw;
-	background-image: url("../images/goldenGateBridge.jpeg");
-	background-size: contain;
+	display: flex;
+	justify-content: center;
+
+	img.backgroundImage {
+		src: "../images/goldenGateBridge.jpeg";
+		width: 80%;
+	}
 }

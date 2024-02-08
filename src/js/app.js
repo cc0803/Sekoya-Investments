@@ -4,11 +4,8 @@ import background1 from "../images/goldenGateBridge.jpeg";
 import "@fortawesome/fontawesome-free/js/fontawesome";
 import "@fortawesome/fontawesome-free/js/solid";
 
-// const imageContainer = document.querySelector(".header-background");
-// let imageElement = new Image();
-// imageElement.src = background1;
-// imageElement.classList.add();
-// imageContainer.appendChild(imageElement);
+const image1 = document.querySelector("img.backgroundImage");
+image1.src = background1;
 
 const menuButton = document.querySelector(".menu-bar-container");
 const dropdownMenu = document.querySelector(".dropdown-menu");
