@@ -12,13 +12,6 @@ html {
 main {
 	padding-top: 150px;
 	width: 100%;
-	display: flex;
-	justify-content: center;
-
-	img.backgroundImage {
-		src: "../images/goldenGateBridge.jpeg";
-		width: 80%;
-	}
 }
 
 section {
@@ -28,14 +21,24 @@ section {
 	}
 }
 
+.imageContainer {
+	width: 80%;
+	margin: 0 auto;
+}
+img.backgroundImage {
+	width: 100%;
+}
+
 h1 {
+	align-self: flex-start;
 	font-weight: 300;
 	color: $fontColor;
 	font-size: 3.5rem;
+	max-width: 10ch;
 }
 
 span {
-	font-size: 4rem;
+	font-size: 5rem;
 	&.bold {
 		font-weight: 600;
 		letter-spacing: 2px;
@@ -49,14 +52,16 @@ h3 {
 	max-width: 40ch;
 	font-weight: 400;
 	text-align: justify;
+	justify-self: flex-end;
 }
 
 .main-heading {
+	width: 80%;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	flex-direction: row;
-	padding: calc(4rem + 5vw);
+	padding: calc(4rem + 5vw) 0;
+	gap: 3rem;
 }
 
 @media (max-width: 800px) {
