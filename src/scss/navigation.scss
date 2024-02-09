@@ -6,6 +6,14 @@ body {
 	margin: 0;
 }
 
+header {
+	min-height: 150px;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	background-color: white;
+}
+
 nav.desktop-nav {
 	flex-wrap: wrap;
 	width: 90%;
@@ -21,7 +29,6 @@ nav.desktop-nav {
 	background-repeat: no-repeat;
 	background-size: contain;
 	align-self: center;
-	background-color: white;
 }
 
 .mobile {
