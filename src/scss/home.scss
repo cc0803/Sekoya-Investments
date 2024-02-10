@@ -16,8 +16,14 @@ main {
 
 section {
 	width: 100%;
-	&.section1 {
-		background-color: black;
+	&.first-section {
+		background-color: $fontColorInverse;
+		color: $fontColor;
+	}
+
+	&.second-section {
+		background-color: $fontColor;
+		color: $fontColorInverse;
 	}
 }
 
@@ -30,7 +36,6 @@ img.backgroundImage {
 }
 
 h1 {
-	align-self: flex-start;
 	font-weight: 300;
 	color: $fontColor;
 	font-size: 3.5rem;
@@ -48,20 +53,32 @@ span {
 h3 {
 	margin: 2rem 4rem;
 	color: $fontColor;
-	font-size: calc(1rem + 0.6vw);
+	font-size: $mediumHeading;
 	max-width: 40ch;
 	font-weight: 400;
 	text-align: justify;
-	justify-self: flex-end;
 }
 
 .main-heading {
 	width: 80%;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	flex-direction: row;
 	padding: calc(4rem + 5vw) 0;
-	gap: 3rem;
+}
+
+.image-options {
+	width: 80%;
+	padding: calc(2rem + 8vw) calc(1rem + 4vw);
+	gap: calc(2rem + 4vw);
+
+	.image-slider,
+	.image-description {
+		font-size: $mediumHeading;
+		max-width: 30ch;
+		text-align: start;
+	}
 }
 
 @media (max-width: 800px) {
@@ -76,6 +93,10 @@ h3 {
 
 	.main-heading {
 		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	div.image-options {
 		flex-direction: column;
 	}
 }
