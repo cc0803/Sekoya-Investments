@@ -111,11 +111,12 @@ h2 {
 	align-self: center;
 	justify-self: center;
 	display: grid;
-	grid-template-rows: 6fr 1fr 2fr 1fr;
+	grid-template-rows: 6fr 1fr 2.2fr 1fr;
 
 	img {
-		width: 100%;
+		width: 12rem;
 		height: 100%;
+		margin: 0 auto;
 	}
 
 	h5 {
@@ -127,6 +128,8 @@ h2 {
 	p {
 		justify-self: start;
 		align-self: start;
+		margin: 0;
+		padding: 0;
 	}
 
 	a.learn-more-link {
@@ -151,5 +154,29 @@ h2 {
 
 	div.image-options {
 		flex-direction: column;
+	}
+
+	// Styling für mobile sollte zu galerie mäßiger Ansicht verändert werden.
+
+	#grid-container-mobile {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 2fr repeat(3, 12fr);
+		gap: 3rem;
+	}
+
+	h4 {
+		grid-area: 1 / 1/ 2/ 2;
+	}
+
+	h2 {
+		grid-area: 2/ 1 / 3/2;
+	}
+
+	.grid-item.company-cornerstones {
+		width: 60%;
+
+		img {
+			height: 100%;
+		}
 	}
 }
