@@ -1,6 +1,7 @@
 import "../scss/home.scss";
 import "../scss/navigation.scss";
 import "../scss/shared.scss";
+import icon from "../images/Logo/Icon.png";
 import background1 from "../images/goldenGateBridge.jpeg";
 import "@fortawesome/fontawesome-free/js/fontawesome";
 import "@fortawesome/fontawesome-free/js/solid";
@@ -25,3 +26,9 @@ images.forEach((img) => {
 
 const speechImg = document.querySelector(".davos-speech");
 speechImg.src = speech;
+
+// Add Website TabIcon
+let link = document.createElement("link");
+link.rel = "icon";
+document.head.appendChild(link);
+link.href = icon;
