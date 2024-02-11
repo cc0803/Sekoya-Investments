@@ -5,7 +5,7 @@ import background1 from "../images/goldenGateBridge.jpeg";
 import "@fortawesome/fontawesome-free/js/fontawesome";
 import "@fortawesome/fontawesome-free/js/solid";
 import oregonImage from "../images/OregonBeach.jpg";
-import davosSpeech from "../images/davosSpeech.jpeg";
+import speech from "../images/davosSpeech.jpeg";
 
 const image1 = document.querySelector("img.backgroundImage");
 image1.src = background1;
@@ -23,6 +23,5 @@ images.forEach((img) => {
 	img.src = oregonImage;
 });
 
-const davosSpeachImg = document.querySelector(".davos-speech");
-console.log(davosSpeachImg);
-davosSpeachImg.src = davosSpeech;
+const speechImg = document.querySelector(".davos-speech");
+speechImg.src = speech;

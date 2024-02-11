@@ -150,7 +150,7 @@ h2 {
 		display: grid;
 		grid-template-columns: 2fr 2fr 1fr;
 		gap: 1rem;
-		grid-template-rows: 1fr 4fr 1fr;
+		grid-template-rows: 1fr 2fr;
 	}
 
 	h2 {
@@ -177,6 +177,15 @@ h2 {
 
 	p {
 		margin: 0;
+	}
+
+	a {
+		color: $fontColor;
+		align-self: flex-start;
+	}
+
+	.flex-center-column {
+		justify-content: space-between;
 	}
 }
 
