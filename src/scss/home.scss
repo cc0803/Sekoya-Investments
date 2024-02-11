@@ -25,7 +25,7 @@ section {
 	&.second-section {
 		background-color: $fontColor;
 		color: $fontColorInverse;
-		padding: calc(2rem + 5vw) 0;
+		padding: $sectionPadding;
 
 		.grid-container {
 			width: 80%;
@@ -97,6 +97,7 @@ h4 {
 	max-width: 20ch;
 	padding: 1rem;
 	border-top: 2px solid black;
+	font-weight: normal;
 }
 
 h2 {
@@ -141,6 +142,42 @@ h2 {
 .third-section {
 	background-color: $fontColorInverse;
 	color: $fontColor;
+
+	.third-section-grid {
+		width: 80%;
+		padding: $sectionPadding;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 2fr 2fr 1fr;
+		gap: 1rem;
+		grid-template-rows: 1fr 4fr 1fr;
+	}
+
+	h2 {
+		grid-area: 2 / 1/ 3/ 2;
+		max-width: 20ch;
+		text-align: start;
+		font-size: calc(1.5rem + 1vw);
+		margin: 0;
+		padding: 0;
+		align-self: self-start;
+		font-weight: normal;
+	}
+
+	h4 {
+		border-color: $fontColor;
+	}
+
+	img {
+		margin: 0 auto;
+		width: 80%;
+		height: 100%;
+		object-fit: fill;
+	}
+
+	p {
+		margin: 0;
+	}
 }
 
 @media (max-width: 800px) {
