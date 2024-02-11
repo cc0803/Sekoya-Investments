@@ -1,6 +1,7 @@
 import "../scss/home.scss";
 import "../scss/navigation.scss";
 import "../scss/shared.scss";
+import "../scss/footer.scss";
 import icon from "../images/Logo/Icon.png";
 import background1 from "../images/goldenGateBridge.jpeg";
 import "@fortawesome/fontawesome-free/js/fontawesome";
