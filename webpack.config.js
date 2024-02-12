@@ -2,7 +2,11 @@ let path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-	entry: "./src/js/app.js",
+	entry: {
+		app: "./src/js/app.js",
+		geschichte: "src/js/geschichte.js",
+		navigation: "addNavigation.js",
+	},
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		filename: "bundle.js",
@@ -25,7 +29,14 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			filename: "home.html",
+			chunks: ["app"],
 			template: "src/html/home.html",
+		}),
+		new HtmlWebpackPlugin({
+			template: "./src/html/geschichte.html",
+			inject: true,
+			chunks: ["geschichte"],
+			filename: "contacts.html",
 		}),
 	],
 };
