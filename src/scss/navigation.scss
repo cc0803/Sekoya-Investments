@@ -18,7 +18,7 @@ nav.desktop-nav {
 	flex-wrap: wrap;
 	width: 90%;
 	display: grid;
-	grid-template-columns: 20% 1fr 15% 15% 15% 1fr 15%;
+	grid-template-columns: 20% 1fr 12% 12% 12% 12% 1fr 12%;
 	margin: 0 auto 0 auto;
 }
 
@@ -89,7 +89,7 @@ a:first-of-type::after {
 
 @media (max-width: 1000px) {
 	nav.desktop-nav {
-		grid-template-columns: 25% 1fr 15% 15% 15% 1fr 15%;
+		grid-template-columns: 20% 1fr 15% 15% 15% 15% 1fr 15%;
 	}
 
 	a {
