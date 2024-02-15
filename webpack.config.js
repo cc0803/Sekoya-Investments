@@ -4,12 +4,11 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
 	entry: {
 		app: "./src/js/app.js",
-		geschichte: "src/js/geschichte.js",
-		navigation: "addNavigation.js",
+		geschichte: "./src/js/geschichte.js",
 	},
 	output: {
 		path: path.resolve(__dirname, "dist"),
-		filename: "bundle.js",
+		filename: "[name].js",
 	},
 	module: {
 		rules: [
@@ -34,9 +33,9 @@ module.exports = {
 		}),
 		new HtmlWebpackPlugin({
 			template: "./src/html/geschichte.html",
-			inject: true,
 			chunks: ["geschichte"],
-			filename: "contacts.html",
+			inject: true,
+			filename: "geschichte.html",
 		}),
 	],
 };

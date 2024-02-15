@@ -8,6 +8,7 @@ import "@fortawesome/fontawesome-free/js/fontawesome";
 import "@fortawesome/fontawesome-free/js/solid";
 import oregonImage from "../images/OregonBeach.jpg";
 import speech from "../images/davosSpeech.jpeg";
+import "./addNavigation.js";
 
 const image1 = document.querySelector("img.backgroundImage");
 image1.src = background1;
