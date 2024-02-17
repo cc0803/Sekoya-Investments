@@ -1,0 +1,61 @@
+@import "colors";
+
+* {
+	// font-family: Arial, Helvetica, sans-serif;
+	font-family: "Guardian Sans", sans-serif;
+	box-sizing: border-box;
+}
+
+section {
+	width: 100vw;
+
+	&.introduction {
+		min-height: 80vh;
+		margin-top: 150px;
+		background-image: url("../images/History/LA.jpeg");
+		opacity: 0.92;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: $fontColor;
+
+		& > div {
+			width: 80%;
+			background-color: rgba(0, 0, 0, 0.4);
+			padding: 2rem;
+			justify-content: space-between;
+
+			h1 {
+				font-size: calc(3rem + 1vw);
+				align-self: flex-start;
+				margin: 0;
+			}
+
+			h4 {
+				max-width: 40ch;
+				align-self: flex-start;
+				font-size: calc(1rem + 0.4vw);
+			}
+
+			h6 {
+				max-width: 40ch;
+				font-size: calc(1rem + 0.4vw);
+				font-weight: lighter;
+				align-self: flex-start;
+			}
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	#header-container {
+		flex-direction: column;
+
+		h1 {
+			font-size: calc(2rem + 0.8vw);
+		}
+	}
+
+	.heading-container {
+		align-self: flex-start;
+	}
+}
