@@ -29,6 +29,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			filename: "home.html",
 			chunks: ["app"],
+			inject: true,
 			template: "src/html/home.html",
 		}),
 		new HtmlWebpackPlugin({
