@@ -6,3 +6,5 @@ Davos Speech Woman -https://assets.weforum.org/editor/wzBM1OQ-HPs7q_BR_1gDX6enko
 Man on Sequoia sign: -https://i.pinimg.com/originals/e4/32/53/e43253230986060bd8e283c215039eab.jpg
 Boy next to Sequoia: -https://i.ebayimg.com/images/g/bOgAAOSwwpFjAsnM/s-l1600.jpg
 LA: -https://www.fodors.com/wp-content/uploads/2022/04/jake-blucker-8LlJNFLTEm0-unsplash.jpg
+Dwight-D-Eisenhower: -https://media.defense.gov/2018/Oct/29/2002056764/-1/-1/0/181029-O-JZ422-667C.JPG
+Georges-Doriot: -https://60.insead.edu/sites/60-years/files/2020-07/GeorgesDoriot_0.jpg
