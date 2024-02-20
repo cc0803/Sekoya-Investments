@@ -8,3 +8,7 @@ Boy next to Sequoia: -https://i.ebayimg.com/images/g/bOgAAOSwwpFjAsnM/s-l1600.jp
 LA: -https://www.fodors.com/wp-content/uploads/2022/04/jake-blucker-8LlJNFLTEm0-unsplash.jpg
 Dwight-D-Eisenhower: -https://media.defense.gov/2018/Oct/29/2002056764/-1/-1/0/181029-O-JZ422-667C.JPG
 Georges-Doriot: -https://60.insead.edu/sites/60-years/files/2020-07/GeorgesDoriot_0.jpg
+Founders: -https://i.pinimg.com/736x/d8/77/6e/d8776e1bb34c878303a5c2fbc9ed9b13.jpg
+LomaPrieta: -https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638889086/EducationHub/photos/loma-prieta-earthquake.jpg
+vacation: -https://blog.trekaroo.com/wp-content/uploads/2020/07/Things-to-do-in-California-with-Kids.jpg
+covid: -https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i3k6rE6JU2W4/v1/-1x-1.jpg
