@@ -5,6 +5,7 @@ module.exports = {
 	entry: {
 		app: "./src/js/app.js",
 		geschichte: "./src/js/geschichte.js",
+		invest: "./src/js/invest.js",
 	},
 	output: {
 		path: path.resolve(__dirname, "dist"),
@@ -37,6 +38,12 @@ module.exports = {
 			chunks: ["geschichte"],
 			inject: true,
 			filename: "geschichte.html",
+		}),
+		new HtmlWebpackPlugin({
+			template: "./src/html/invest.html",
+			chunks: ["invest"],
+			inject: true,
+			filename: "invest.html",
 		}),
 	],
 };
