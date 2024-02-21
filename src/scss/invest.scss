@@ -1,0 +1,41 @@
+@import "colors";
+
+* {
+	// font-family: Arial, Helvetica, sans-serif;
+	font-family: $fontFamilyText;
+	box-sizing: border-box;
+}
+
+main {
+	min-width: 100vw;
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	min-width: 100%;
+	color: $fontColor;
+
+	&.section-one {
+		margin-top: 10rem;
+		background-image: url("../images/OregonBeach.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 50vh;
+	}
+}
+
+.page-heading {
+	h1 {
+		font-size: 4.5em;
+		font-family: $fontFamilyHeading;
+		font-weight: 500;
+	}
+
+	p {
+		font-size: 1.6em;
+		max-width: 70ch;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
