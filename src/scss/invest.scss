@@ -26,11 +26,13 @@ section {
 	
 	&.section-two {
 		color: $fontColorInverse;
+		background-color: $fontColorGray;
+		padding: 2rem 0;
 
 		.financials-container {
 			width: 80%;
 			justify-content: space-between;
-			margin: 0 auto 1rem auto;	
+			margin: 0 auto;	
 		}
 	}
 }
@@ -52,20 +54,27 @@ h1 {
 }
 
 
-
-.financials {
-	border-bottom: 4px solid $fontColorInverse;
-	width: 30%;
-	
-	
-	h1 {
-		text-align: center;
-		max-width: 10ch;
-		margin-bottom: 0;
-	}
-	
-	p {
-		text-align: center;
-		font-size: 1.25rem;
+.financials-container {
+	.financials {
+		border-bottom: 4px solid $fontColorInverse;
+		width: 30%;
+		max-height: 280px;
+		display: grid;
+		grid-template-rows: 180px 1fr 90px;
+		
+		
+		h1 {
+			text-align: center;
+			max-width: 10ch;
+			margin: 0;
+			place-self: center;
+		}
+		
+		p {
+			text-align: center;
+			font-size: 1.6em;
+			margin: 0;
+			place-self: center;
+		}
 	}
 }

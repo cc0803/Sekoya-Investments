@@ -1,5 +1,6 @@
 let path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
 	entry: {
@@ -27,6 +28,9 @@ module.exports = {
 		],
 	},
 	plugins: [
+		new CompressionPlugin({
+			test: /\.(png|jpe?g|gif)$/i,
+		}),
 		new HtmlWebpackPlugin({
 			filename: "home.html",
 			chunks: ["app"],
