@@ -23,7 +23,7 @@ section {
 		background-size: cover;
 		min-height: 50vh;
 	}
-	
+
 	&.section-two {
 		color: $fontColorInverse;
 		background-color: $fontColorGray;
@@ -32,7 +32,7 @@ section {
 		.financials-container {
 			width: 80%;
 			justify-content: space-between;
-			margin: 0 auto;	
+			margin: 0 auto;
 		}
 	}
 }
@@ -44,15 +44,14 @@ h1 {
 }
 
 .page-heading {
-	
 	p {
 		font-size: 1.6em;
 		max-width: 70ch;
 		text-align: center;
 		margin: 0 auto;
+		padding: 0 1rem;
 	}
 }
-
 
 .financials-container {
 	.financials {
@@ -61,20 +60,56 @@ h1 {
 		max-height: 280px;
 		display: grid;
 		grid-template-rows: 180px 1fr 90px;
-		
-		
+
 		h1 {
 			text-align: center;
 			max-width: 10ch;
 			margin: 0;
 			place-self: center;
 		}
-		
+
 		p {
 			text-align: center;
 			font-size: 1.6em;
 			margin: 0;
 			place-self: center;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.page-heading {
+		p {
+			font-size: calc(1em + 0.4vw);
+		}
+
+		h1 {
+			font-size: $h1Mobile;
+		}
+	}
+
+	.section-two .financials-container {
+		flex-direction: column;
+		width: 90%;
+		margin: 0 auto;
+
+		.financials {
+			width: 100%;
+			grid-template-rows: 70px 1fr 35px;
+			border-bottom: 2px solid black;
+			padding: 2em 0;
+
+			&:last-of-type {
+				border-bottom: 0px;
+			}
+
+			h1 {
+				font-size: $h1Mobile;
+			}
+
+			p {
+				font-size: 1.4em;
+			}
 		}
 	}
 }
