@@ -8,7 +8,7 @@ import "../scss/footer.scss";
 const header = document.querySelector("header");
 
 const headerHtml =
-	'<nav class="desktop-nav hidden"><a href="./home.html"><div class="logoContainer"></div></a><div class="spacer"></div><a href="" class="page-link">Unternehmen</a><a href="./invest.html" class="page-link">Investieren</a><a href="./geschichte.html" class="page-link">Geschichte</a><div class="spacer"></div><a href="" class="page-link">Log In</a></nav><nav class="mobile"><a href=""><div class="logoContainer"></div></a><div class="spacer"></div><div class="menu-bar-container"><i class="fa-solid fa-bars menu-bar"> </i></div><div class="dropdown-menu"><a href="" class="page-link">Unternehmen</a><a href="./invest.html" class="page-link">Investieren</a><a href="./geschichte.html" class="page-link">Geschichte</a><a href="" class="page-link">Log In</a></div></nav>';
+	'<nav class="desktop-nav hidden"><a href="./home.html"><div class="logoContainer"></div></a><div class="spacer"></div><a href="./company.html" class="page-link">Unternehmen</a><a href="./invest.html" class="page-link">Investieren</a><a href="./geschichte.html" class="page-link">Geschichte</a><div class="spacer"></div><a href="" class="page-link">Log In</a></nav><nav class="mobile"><a href=""><div class="logoContainer"></div></a><div class="spacer"></div><div class="menu-bar-container"><i class="fa-solid fa-bars menu-bar"> </i></div><div class="dropdown-menu"><a href="./company.html" class="page-link">Unternehmen</a><a href="./invest.html" class="page-link">Investieren</a><a href="./geschichte.html" class="page-link">Geschichte</a><a href="" class="page-link">Log In</a></div></nav>';
 
 header.innerHTML = headerHtml;
 
