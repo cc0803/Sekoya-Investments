@@ -1,0 +1,60 @@
+@import "colors";
+
+* {
+	// font-family: Arial, Helvetica, sans-serif;
+	font-family: "Guardian Sans", sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.wrapper {
+	margin-top: 150px;
+	height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	perspective: 10px;
+}
+
+.section-one {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	transform-style: preserve-3d;
+	z-index: -1;
+}
+
+.one,
+.two {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+.one {
+	transform: translateZ(-10px) scale(2);
+}
+
+.two {
+	transform: translateZ(-5px) scale(1.5);
+}
+
+.three {
+	font-size: calc(2rem + 2vw);
+	font-family: $fontFamilyHeading;
+	color: $fontColor;
+	text-shadow: 0 0 5px $fontColorInverse;
+}
+
+.section-two {
+	font-size: 2rem;
+	padding: 2rem;
+	background-color: $fontColorInverse;
+	color: $fontColor;
+}

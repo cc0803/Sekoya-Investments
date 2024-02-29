@@ -6,7 +6,7 @@ module.exports = {
 		app: "./src/js/app.js",
 		geschichte: "./src/js/geschichte.js",
 		invest: "./src/js/invest.js",
-		unternehmen: "./src/js/company.js",
+		company: "./src/js/company.js",
 	},
 	output: {
 		path: path.resolve(__dirname, "dist"),
