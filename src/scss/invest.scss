@@ -21,7 +21,7 @@ section {
 	color: $fontColor;
 
 	&.section-one {
-		margin-top: 10rem;
+		margin-top: 150px;
 		background-image: url("../images/OregonBeach.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -295,5 +295,11 @@ section.section-four {
 		.section-heading {
 			grid-area: 1/ 1/ 2/2;
 		}
+	}
+}
+
+@media (max-width: 650px) {
+	section.section-one {
+		margin-top: 6rem;
 	}
 }

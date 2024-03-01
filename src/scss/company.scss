@@ -11,7 +11,7 @@ body {
 }
 
 .wrapper {
-	margin-top: 150px;
+	margin-top: 8rem;
 	height: 100vh;
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -57,4 +57,10 @@ body {
 	padding: 2rem;
 	background-color: $fontColorInverse;
 	color: $fontColor;
+}
+
+@media (max-width: 650px) {
+	div.wrapper {
+		margin-top: 6rem;
+	}
 }

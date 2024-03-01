@@ -7,7 +7,7 @@ body {
 }
 
 header {
-	min-height: 150px;
+	height: 8rem;
 	width: 100vw;
 	position: fixed;
 	top: 0;
@@ -16,6 +16,7 @@ header {
 }
 
 nav.desktop-nav {
+	height: 150px;
 	flex-wrap: wrap;
 	width: 90%;
 	display: grid;
@@ -24,8 +25,8 @@ nav.desktop-nav {
 }
 
 .logoContainer {
-	min-width: 8rem;
-	min-height: 8rem;
+	width: 8rem;
+	height: 8rem;
 	background-image: url("../images/Logo/Logo.PNG");
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -98,22 +99,41 @@ a:first-of-type::after {
 	}
 
 	.logoContainer {
-		min-width: 8rem;
-		min-height: 8rem;
+		width: 8rem;
+		height: 8rem;
 	}
 }
 
 @media (max-width: 800px) {
+	header {
+		height: 7rem;
+	}
+
 	.logoContainer {
 		background-image: url("../images/Logo/Logo.PNG");
 	}
 	.logoContainer {
-		min-width: 7rem;
-		min-height: 7rem;
+		width: 7rem;
+		height: 7rem;
 	}
 }
 
 @media (max-width: 650px) {
+	header {
+		height: 6rem;
+	}
+
+	.menu-bar-container {
+		width: 6rem;
+		height: 6rem;
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	.hidden {
 		opacity: 0;
 		pointer-events: none;
@@ -121,8 +141,16 @@ a:first-of-type::after {
 		height: 0px;
 	}
 
+	header .logoContainer {
+		height: 6rem;
+		width: 6rem;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+	}
+
 	.mobile {
-		min-height: 7rem;
+		height: 6rem;
 		opacity: 1;
 		pointer-events: all;
 
@@ -133,6 +161,9 @@ a:first-of-type::after {
 			align-items: center;
 			font-size: 1.5rem;
 			background-color: $fontColor;
+			position: fixed;
+			top: 6rem;
+			left: 0;
 		}
 
 		.visible {
