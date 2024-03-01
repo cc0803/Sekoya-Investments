@@ -8,6 +8,7 @@
 
 body {
 	margin: 0;
+	font-size: 1em;
 }
 
 .wrapper {
@@ -46,17 +47,78 @@ body {
 }
 
 .three {
-	font-size: calc(2rem + 2vw);
+	font-size: calc(2em + 2vw);
 	font-family: $fontFamilyHeading;
 	color: $fontColor;
 	text-shadow: 0 0 5px $fontColorInverse;
 }
 
 .section-two {
-	font-size: 2rem;
-	padding: 2rem;
-	background-color: $fontColorInverse;
-	color: $fontColor;
+	width: 100%;
+	background-color: $fontColorGray;
+	color: $fontColorInverse;
+}
+
+.section-container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 6em 0;
+
+	h1 {
+		font-family: $fontFamilyHeading;
+		font-size: 4.5em;
+	}
+
+	p {
+		margin: 0 auto;
+		font-size: 1.6em;
+		max-width: 70ch;
+		text-align: justify;
+	}
+}
+
+.explanation-container {
+	margin-top: 6em;
+	width: 100%;
+	justify-content: space-between;
+	gap: 2em;
+
+	.explanation {
+		height: 100%;
+		display: flex;
+		justify-content: stretch;
+		flex-direction: column;
+		margin-bottom: auto;
+	}
+
+	h3 {
+		font-size: 2rem;
+		font-family: $fontFamilyHeading;
+		padding-bottom: 1.6em;
+		border-bottom: 2px solid $fontColorInverse;
+		width: 80%;
+		text-align: center;
+		margin: 0 auto;
+		height: 130px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	p {
+		margin: 1em 0.5em;
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 1000px) {
+	body {
+		font-size: 0.8em;
+	}
+
+	.explanation-container {
+		flex-direction: column;
+	}
 }
 
 @media (max-width: 650px) {
