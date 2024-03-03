@@ -37,4 +37,8 @@ div.legal {
 	grid-area: 2/1/ 3/4;
 	padding: 1rem 0;
 	border-top: 2px solid $fontColorInverse;
+
+	.copyright {
+		max-width: 50%;
+	}
 }
