@@ -3,10 +3,10 @@ import "../scss/article.scss";
 import "../scss/shared.scss";
 import davosImg from "../images/davosSpeech.jpeg";
 
-const pageHeading = document.querySelector("title");
-const heading = document.querySelector("main h1");
-const img = document.querySelector("img");
-const text = document.querySelector("main div");
+const pageHeading = document.querySelector("title.article");
+const heading = document.querySelector("h1.article");
+const img = document.querySelector("img.article");
+const text = document.querySelector("main div.article");
 
 // Factory Function, welche Object returned
 function textObject(title, image, paragraph) {
