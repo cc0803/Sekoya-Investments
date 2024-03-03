@@ -1,0 +1,21 @@
+@import "colors";
+
+* {
+	// font-family: Arial, Helvetica, sans-serif;
+	font-family: "Guardian Sans", sans-serif;
+	box-sizing: border-box;
+}
+
+main {
+	margin: 12rem auto;
+	width: 80%;
+}
+
+h1,
+h3 {
+	font-family: $fontFamilyHeading;
+}
+
+p {
+	font-family: $fontFamilyText;
+}

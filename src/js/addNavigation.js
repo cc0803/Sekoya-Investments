@@ -29,6 +29,6 @@ document.head.appendChild(link);
 const footer = document.querySelector("footer");
 
 const footerHtml =
-	'<ul><li>Neuigkeiten</li></ul><ul><li>Kontakt</li></ul><ul><li>Social Media</li><li>LinkedIn</li><li>Instagramm</li><li>X</li></ul><div class="legal flex-center-row"><span class="copyright">@Sekoya Investments Copyright</span><a href="">Kapitalgesellschaft</a><a href="">Steuern</a><a href="">Impressum</a></div>';
+	'<ul><li>Neuigkeiten</li></ul><ul><li>Kontakt</li></ul><ul><li>Social Media</li><li>LinkedIn</li><li>Instagramm</li><li>X</li></ul><div class="legal flex-center-row"><span class="copyright">@Sekoya Investments Copyright</span><a href="">Kapitalgesellschaft</a><a href="">Steuern</a><a href="./impressum.html">Impressum</a></div>';
 
 footer.innerHTML = footerHtml;
