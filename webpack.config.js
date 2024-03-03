@@ -8,6 +8,7 @@ module.exports = {
 		invest: "./src/js/invest.js",
 		company: "./src/js/company.js",
 		impressum: "./src/js/impressum.js",
+		article: "./src/js/article.js",
 	},
 	output: {
 		path: path.resolve(__dirname, "dist"),
@@ -58,6 +59,12 @@ module.exports = {
 			chunks: ["impressum"],
 			inject: true,
 			filename: "impressum.html",
+		}),
+		new HtmlWebpackPlugin({
+			template: "./src/html/article.html",
+			chunks: ["article"],
+			incject: true,
+			filename: "article.html",
 		}),
 	],
 };

@@ -85,7 +85,7 @@ a:focus::after {
 	transform: translate3d(0, 0, 0);
 }
 
-a:first-of-type::after {
+a.logo-link::after {
 	height: 0;
 }
 
