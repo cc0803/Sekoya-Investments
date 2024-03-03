@@ -3,9 +3,54 @@
 * {
 	font-family: "Guardian Sans", sans-serif;
 	box-sizing: border-box;
+	color: $fontColorInverse;
 }
 
 body {
 	width: 100%;
 	margin: 0;
+}
+
+main {
+	width: 60%;
+	margin: 8rem auto;
+}
+
+h1 {
+	padding: 2em 0 1em 0;
+	font-size: calc(2em + 2vw);
+	font-family: $fontFamilyHeading;
+}
+
+article {
+	font-family: $fontFamilyHeading;
+	font-weight: 300;
+	font-size: 1.2em;
+}
+
+p {
+	font-family: $fontFamilyHeading;
+	font-size: 1.6em;
+	text-align: justify;
+}
+
+img {
+	width: 100%;
+	object-fit: contain;
+}
+
+@media (max-width: 800px) {
+	main {
+		font-size: 0.8em;
+		margin: 7rem auto;
+		width: 70%;
+	}
+}
+
+@media (max-width: 650px) {
+	main {
+		font-size: 0.7em;
+		margin: 6rem auto;
+		width: 80%;
+	}
 }
