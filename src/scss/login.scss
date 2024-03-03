@@ -1,0 +1,28 @@
+@import "colors.scss";
+
+* {
+	font-family: "Guardian Sans", sans-serif;
+	box-sizing: border-box;
+}
+
+main {
+	margin-top: 8rem;
+	height: 100vh;
+}
+
+form {
+	width: 60%;
+	height: 300px;
+	background-color: $fontColorGray;
+	border-radius: 2rem;
+}
+
+label {
+	padding: 2em 0 1em 0;
+}
+
+input {
+	font-size: 1.4em;
+	width: 60%;
+	border-radius: 1em;
+}

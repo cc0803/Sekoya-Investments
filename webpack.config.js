@@ -9,6 +9,7 @@ module.exports = {
 		company: "./src/js/company.js",
 		impressum: "./src/js/impressum.js",
 		article: "./src/js/article.js",
+		login: "./src/js/login.js",
 	},
 	output: {
 		path: path.resolve(__dirname, "dist"),
@@ -65,6 +66,12 @@ module.exports = {
 			chunks: ["article"],
 			incject: true,
 			filename: "article.html",
+		}),
+		new HtmlWebpackPlugin({
+			template: "./src/html/login.html",
+			chunks: ["login"],
+			incject: true,
+			filename: "login.html",
 		}),
 	],
 };
