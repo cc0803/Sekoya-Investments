@@ -16,3 +16,4 @@ forest: -https://brightlightsofamerica.com/wp-content/uploads/2020/03/Muir-Woods
 skyline: -https://purepng.com/public/uploads/large/purepng.com-new-york-city-skylinecitycitiesskylineskyscrapers-251520164674syfxp.png
 nightsky: -https://www.japantimes.co.jp/uploads/imported_images/uploads/2019/12/p9-flam-a-20191210.jpg
 entwicklung: https://www.handelsblatt.com/adv/firmen/img/content/qlaunch-gmbh/43233/originale/app-entwicklung-adobestock-171466951_069.jpg
+Wasserflugzeug: https://www.formentera-island.de/wp-content/uploads/2021/02/wasserflugzeug-formentera-1200x800.jpg
