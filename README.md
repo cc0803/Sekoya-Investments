@@ -15,3 +15,4 @@ covid: -https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i3k6rE6JU2W4/v1/-1x-1.j
 forest: -https://brightlightsofamerica.com/wp-content/uploads/2020/03/Muir-Woods-Sunrise-1080x720.jpg;
 skyline: -https://purepng.com/public/uploads/large/purepng.com-new-york-city-skylinecitycitiesskylineskyscrapers-251520164674syfxp.png
 nightsky: -https://www.japantimes.co.jp/uploads/imported_images/uploads/2019/12/p9-flam-a-20191210.jpg
+entwicklung: https://www.handelsblatt.com/adv/firmen/img/content/qlaunch-gmbh/43233/originale/app-entwicklung-adobestock-171466951_069.jpg
